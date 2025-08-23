@@ -16,5 +16,19 @@ namespace MedicalBookingSystem
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e) { }
+
+        private void bookButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Book button clicked (test only)");
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.Close(); // back to MainForm
+        }
+
+        private void AppointmentForm_Load(object sender, EventArgs e) { }
     }
 }

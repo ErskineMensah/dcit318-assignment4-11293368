@@ -30,6 +30,7 @@
         {
             doctorDataGridView = new DataGridView();
             backBtn = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)doctorDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             doctorDataGridView.BackgroundColor = Color.White;
             doctorDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             doctorDataGridView.GridColor = SystemColors.ScrollBar;
-            doctorDataGridView.Location = new Point(77, 81);
+            doctorDataGridView.Location = new Point(80, 156);
             doctorDataGridView.Name = "doctorDataGridView";
             doctorDataGridView.ReadOnly = true;
             doctorDataGridView.RowHeadersWidth = 51;
@@ -53,33 +54,49 @@
             // 
             backBtn.Anchor = AnchorStyles.None;
             backBtn.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backBtn.Location = new Point(366, 491);
+            backBtn.Location = new Point(378, 554);
             backBtn.Name = "backBtn";
             backBtn.Size = new Size(166, 38);
             backBtn.TabIndex = 1;
             backBtn.Text = "Back";
             backBtn.UseVisualStyleBackColor = true;
-            backBtn.Click += this.button1_Click;
+            backBtn.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.None;
+            label1.AutoSize = true;
+            label1.Font = new Font("Gill Sans Ultra Bold", 19.8000011F);
+            label1.Location = new Point(233, 82);
+            label1.Name = "label1";
+            label1.Size = new Size(452, 48);
+            label1.TabIndex = 2;
+            label1.Text = "Doctors Information";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // DoctorListForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(948, 566);
+            ClientSize = new Size(948, 623);
+            Controls.Add(label1);
             Controls.Add(backBtn);
             Controls.Add(doctorDataGridView);
             Name = "DoctorListForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DoctorListForm";
-            Load += this.DoctorListForm_Load;
+            FormClosed += backBtn_Click;
+            Load += DoctorListForm_Load;
             ((System.ComponentModel.ISupportInitialize)doctorDataGridView).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView doctorDataGridView;
         private Button backBtn;
+        private Label label1;
     }
 }

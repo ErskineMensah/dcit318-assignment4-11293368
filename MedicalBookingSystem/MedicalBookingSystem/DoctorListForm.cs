@@ -16,5 +16,17 @@ namespace MedicalBookingSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DoctorListForm_Load(object sender, EventArgs e) { }
     }
 }

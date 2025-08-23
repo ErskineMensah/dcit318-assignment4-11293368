@@ -17,20 +17,21 @@ namespace MedicalBookingSystem
             InitializeComponent();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Update button clicked (test only)");
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void deleteBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Delete button clicked (test only)");
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close(); 
-            // closes ManageAppointmentsForm and returns to MainForm
-        }
+        private void ManageAppointmentsForm_Load(object sender, EventArgs e) { }
     }
 }
