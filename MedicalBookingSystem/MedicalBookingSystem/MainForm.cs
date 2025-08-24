@@ -16,7 +16,7 @@ namespace MedicalBookingSystem
         {
             // Open AppointmentForm
             AppointmentForm appointmentForm = new AppointmentForm();
-            appointmentForm.ShowDialog();   // modal
+            appointmentForm.ShowDialog();  
 
         }
 
@@ -24,14 +24,14 @@ namespace MedicalBookingSystem
         {
             // Open ManageAppointmentsForm
             ManageAppointmentsForm manageForm = new ManageAppointmentsForm();
-            manageForm.ShowDialog();   // modal
+            manageForm.ShowDialog();
         }
 
         private void doctorViewButton_click(object sender, EventArgs e)
         {
             // Open DoctorListForm
             DoctorListForm doctorForm = new DoctorListForm();
-            doctorForm.ShowDialog();   // modal
+            doctorForm.ShowDialog();  
         }
     }
 }

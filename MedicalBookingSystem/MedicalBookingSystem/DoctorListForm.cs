@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient; 
 
 namespace MedicalBookingSystem
 {
@@ -15,6 +16,27 @@ namespace MedicalBookingSystem
         public DoctorListForm()
         {
             InitializeComponent();
+        }
+
+        private void LoadDoctorsData()
+        {
+            try
+            {
+                string query = "SELECT DoctorID, FullName, Specialty, Availability FROM Doctors;";
+
+                DataTable doctorsTable = DatabaseHelper.GetDataTable(query);
+
+                doctorDataGridView.DataSource = doctorsTable;
+
+                if (doctorDataGridView.Columns["Availability"] != null)
+                {
+                    doctorDataGridView.Columns["Availability"].HeaderText = "Is Available?";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while loading doctors: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,6 +49,8 @@ namespace MedicalBookingSystem
             this.Close();
         }
 
-        private void DoctorListForm_Load(object sender, EventArgs e) { }
+        private void DoctorListForm_Load(object sender, EventArgs e) {
+            LoadDoctorsData();
+        }
     }
 }

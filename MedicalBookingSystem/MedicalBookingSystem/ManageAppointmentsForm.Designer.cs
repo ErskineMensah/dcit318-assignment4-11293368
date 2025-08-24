@@ -53,47 +53,47 @@
             manageAGridView.BackgroundColor = Color.White;
             manageAGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             manageAGridView.GridColor = SystemColors.ScrollBar;
-            manageAGridView.Location = new Point(63, 145);
+            manageAGridView.Location = new Point(92, 125);
             manageAGridView.Name = "manageAGridView";
             manageAGridView.RowHeadersWidth = 51;
-            manageAGridView.Size = new Size(931, 368);
+            manageAGridView.Size = new Size(840, 368);
             manageAGridView.TabIndex = 1;
             // 
             // backButton
             // 
             backButton.Anchor = AnchorStyles.None;
             backButton.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            backButton.Location = new Point(63, 544);
+            backButton.Location = new Point(92, 516);
             backButton.Name = "backButton";
             backButton.Size = new Size(199, 51);
             backButton.TabIndex = 2;
             backButton.Text = "Back";
             backButton.UseVisualStyleBackColor = true;
-            backButton.Click += this.backBtn_Click;
+            backButton.Click += backBtn_Click;
             // 
             // updateButton
             // 
             updateButton.Anchor = AnchorStyles.None;
             updateButton.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
-            updateButton.Location = new Point(802, 544);
+            updateButton.Location = new Point(740, 516);
             updateButton.Name = "updateButton";
             updateButton.Size = new Size(192, 51);
             updateButton.TabIndex = 3;
             updateButton.Text = "Update";
             updateButton.UseVisualStyleBackColor = true;
-            updateButton.Click += this.updateBtn_Click;
+            updateButton.Click += updateBtn_Click;
             // 
             // deleteButton
             // 
             deleteButton.Anchor = AnchorStyles.None;
             deleteButton.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
-            deleteButton.Location = new Point(584, 544);
+            deleteButton.Location = new Point(528, 516);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(191, 51);
             deleteButton.TabIndex = 4;
             deleteButton.Text = "Delete";
             deleteButton.UseVisualStyleBackColor = true;
-            deleteButton.Click += this.deleteBtn_Click;
+            deleteButton.Click += deleteBtn_Click;
             // 
             // ManageAppointmentsForm
             // 
@@ -108,7 +108,7 @@
             Controls.Add(label1);
             Name = "ManageAppointmentsForm";
             Text = "ManageAppointmentsForm";
-            Load += this.ManageAppointmentsForm_Load;
+            Load += ManageAppointmentsForm_Load;
             ((System.ComponentModel.ISupportInitialize)manageAGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
