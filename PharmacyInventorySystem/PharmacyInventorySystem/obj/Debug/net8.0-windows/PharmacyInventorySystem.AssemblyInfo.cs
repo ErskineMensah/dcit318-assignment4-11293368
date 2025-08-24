@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PharmacyInventorySystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5d8cb5c83e801ba9c003b001f3b2a2ddc17dc20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6c4262a0d4a9eb2621243938798deb8cf332e7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PharmacyInventorySystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PharmacyInventorySystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
