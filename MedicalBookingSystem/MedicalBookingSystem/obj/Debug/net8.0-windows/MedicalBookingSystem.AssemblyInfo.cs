@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedicalBookingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b77e06c0d7e7cbc1a693b53a594791245af6fdc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5d8cb5c83e801ba9c003b001f3b2a2ddc17dc20")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedicalBookingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedicalBookingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
